@@ -1,0 +1,36 @@
+<UserControl x:Class="KnightLock.Controls.PathField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:KnightLock.Controls"
+             x:Name="Root">
+    <!--
+        Read-only path display. A read-only TextBox was the wrong tool here: only the chrome needs
+        to look like a field, the value should ellipsize, and the control has to render something
+        sensible when the value is empty.
+    -->
+    <Border x:Name="Chrome" Height="34" CornerRadius="5" BorderThickness="1" Padding="11,0"
+            Background="{DynamicResource ControlFillColorDefaultBrush}"
+            BorderBrush="{DynamicResource ControlStrokeColorDefaultBrush}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <controls:IconPresenter x:Name="Glyph"
+                                    Data="{StaticResource GeoFolder}"
+                                    Width="16" Height="16"
+                                    VerticalAlignment="Center"
+                                    Margin="0,0,9,0"
+                                    Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+
+            <TextBlock x:Name="Value"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       FontSize="13"
+                       TextWrapping="NoWrap"
+                       TextTrimming="CharacterEllipsis"
+                       Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+        </Grid>
+    </Border>
+</UserControl>
