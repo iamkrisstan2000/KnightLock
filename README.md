@@ -5,6 +5,16 @@ KnightLock compresses and seals that folder into a single `.vault` container. Un
 with the files in Explorer, lock it again — the container is re-sealed and the decrypted copy is
 overwritten on disk.
 
+## Screenshots 
+
+<img width="1919" height="1079" alt="Screenshot 2026-11-04 142755" src="https://github.com/user-attachments/assets/92dcda9f-ab99-4d8b-aba8-d7ceef01b3ba" />
+<img width="1919" height="1079" alt="Screenshot 2026-11-04 142746" src="https://github.com/user-attachments/assets/0f338470-754d-47f1-b6a8-f29854eb9144" />
+<img width="1919" height="1079" alt="Screenshot 2026-11-04 142730" src="https://github.com/user-attachments/assets/b2b598c8-9b42-4056-abc2-f949b5c66e1a" />
+<img width="1919" height="1079" alt="Screenshot 2026-11-04 142721" src="https://github.com/user-attachments/assets/05e598e7-f84b-4704-acff-12050d66833f" />
+<img width="1919" height="1079" alt="Screenshot 2026-11-04 142711" src="https://github.com/user-attachments/assets/63a382c6-7e87-4179-a3d8-1ece811a5011" />
+
+
+
 No Electron, no browser engine, no cloud, no telemetry, no network code at all. It is a WPF app on
 .NET 8 with a hand-built Fluent (WinUI 3) shell: real Mica/Acrylic backdrop, NavigationView sidebar,
 ContentDialogs, and automatic light/dark.
